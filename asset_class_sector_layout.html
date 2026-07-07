@@ -34,13 +34,20 @@
         }
 
 		/* Style for sector/asset-class chart images (bonds, indices, crypto, GICS sectors) */	
-        .sector-chart {
-            display: block;
-            margin: 0 auto;
-            max-width: 1575px;
-            width: 100%;
-            height: auto;
-        }
+		/*
+		DISABLED 2026-07 -- caused blurry rendering with dpi=150; reverted <img> tags
+		back to inline style="display:block;margin: 0 auto;" instead. Keeping this
+		here in case dpi/figsize tuning changes again and this approach is revisited.
+
+		Style for sector/asset-class chart images (bonds, indices, crypto, GICS sectors)
+		.sector-chart {
+			display: block;
+			margin: 0 auto;
+			max-width: 1575px;
+			width: 100%;
+			height: auto;
+		}
+		*/
     </style>
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #ECF0F1; color: #333;">
@@ -72,7 +79,7 @@
         <h1 style="text-align: left;"> Treasury YIELD Proxies</h1>
     </div>
 	
-	<img src="images/bonds.png" alt="Bond (Asset Class) layout is unavailable or is having a problem." class="sector-chart">
+	<img src="images/bonds.png" alt="Bond (Asset Class) layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 </body>	
 	
 	
@@ -91,7 +98,7 @@
         <h1 style="text-align: left;"> Stock Indices</h1>
     </div>
 	
-    <img src="images/indices.png" alt="Equity-Indices layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/indices.png" alt="Equity-Indices layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 
 	<p style="font-size: 14px; color: black; text-align: center; margin-top: 10px;">
 		* The BLUE horizontal price levels seen on stock index charts ABOVE are -5%/-10%/-20% "correction" levels 
@@ -108,56 +115,56 @@
         <h1 style="text-align: left;"> SECTOR: Basic Materials (GICS 15)</h1>
     </div>
 	
-    <img src="images/sector_15.png" alt="Basic Materials Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_15.png" alt="Basic Materials Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 	
 	<div style="background-color: white; color: #1F618D; padding: 1px;">
         <h1 style="text-align: left;"> SECTOR: Industrials (GICS 20)</h1>
     </div>
 	
-    <img src="images/sector_20.png" alt="Industrial Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_20.png" alt="Industrial Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 	
 	<div style="background-color: white; color: #1F618D; padding: 1px;">
         <h1 style="text-align: left;"> SECTOR: Consumer Discretionary (GICS 25)</h1>
     </div>
 	
-    <img src="images/sector_25.png" alt="Consumer Discretionary Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_25.png" alt="Consumer Discretionary Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 	
     <div style="background-color: white; color: #1F618D; padding: 1px;">
         <h1 style="text-align: left;"> SECTOR: Consumer Staples (GICS 30)</h1>
     </div>
 	
-    <img src="images/sector_30.png" alt="Consumer Staples Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_30.png" alt="Consumer Staples Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 	
     <div style="background-color: white; color: #1F618D; padding: 1px;">
         <h1 style="text-align: left;"> SECTOR: Healthcare (GICS 35)</h1>
     </div>
 	
-    <img src="images/sector_35.png" alt="Healthcare Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_35.png" alt="Healthcare Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 	
     <div style="background-color: white; color: #1F618D; padding: 1px;">
         <h1 style="text-align: left;"> SECTOR: Financials (GICS 40)</h1>
     </div>
 	
-    <img src="images/sector_40.png" alt="Financials Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_40.png" alt="Financials Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 
     <div style="background-color: white; color: #1F618D; padding: 1px;">
         <h1 style="text-align: left;"> SECTOR: Information Technology (GICS 45)</h1>
     </div>
 	    
-    <img src="images/sector_45.png" alt="Information Technology Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_45.png" alt="Information Technology Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
     	
 	
     <div style="background-color: white; color: #1F618D; padding: 1px;">
         <h1 style="text-align: left;"> SECTOR: Communication Services (GICS 50)</h1>
     </div>
     
-    <img src="images/sector_50.png" alt="Communication Services Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_50.png" alt="Communication Services Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
     
 	<div style="background-color: white; color: #1F618D; padding: 1px;">
         <h1 style="text-align: left;"> SECTOR: Utilities (GICS 55)</h1>
     </div>
 	
-    <img src="images/sector_55.png" alt="Utilities Sector layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/sector_55.png" alt="Utilities Sector layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 	
     <hr style="border: 2px dashed gray;">
 </body>
@@ -178,7 +185,7 @@
         <h1 style="text-align: left;"> CRYPTO: USD-Denominated</h1>
     </div>
     
-    <img src="images/crypto.png" alt="Cryptocurrency (Asset Class) layout is unavailable or is having a problem." class="sector-chart">
+    <img src="images/crypto.png" alt="Cryptocurrency (Asset Class) layout is unavailable or is having a problem." style="display:block;margin: 0 auto;">
 	
     <hr style="border: 2px dashed gray;">
     
